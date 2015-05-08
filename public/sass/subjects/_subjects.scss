@@ -1,0 +1,22 @@
+@import '../variables/color';
+
+#messages{
+	padding-top: 2%;
+}
+
+.box{
+	width: 24%;
+	background-color: $box-blauw;
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	padding: 3% 0;
+	text-align: center;
+	a{
+		color: white;
+	}
+}
+
+.clearfix{
+	clear: both;
+}

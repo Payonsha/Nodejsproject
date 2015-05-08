@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <ul class="nav nav-tabs nav-justified">
+    <li><a href="/subjects">Vorige</a></li>
+    <li><a href="/subjects">Home</a></li>
+    <li><a href="/profile">Profiel</a></li>
+  </ul>
+  <div class="container">
+    <div class="col-sm-6 col-sm-offset-3">
+       <h1>Q&A app</h1>
+       <h2>Discussion: <%= docs.dsc %></h2>
+       <h2>Questions</h2>
+    <div id="formdiv">
+    <form action="/questions.ejs" method="post" id="send-question">
+      <label for="question">Ask your questions?</label>
+      <input type="text" id="question" size="35" class="form-control">
+      <input type="submit" value="Stel uw vraag" id="btnsend" class="btn btn-default navbar-btn" >
+      <div id="error"></div>
+    </form>
+    <div id="questions"></div>
+  </div>
+  </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/javascripts/questions.js"></script>
+</body>
+</html>
+  
+  
+

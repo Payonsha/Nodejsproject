@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <ul class="nav nav-tabs nav-justified">
+    <li><a href="/login">Vorige</a></li>
+    <li><a href="/subjects">Home</a></li>
+    <li><a href="/profile">Profiel</a></li>
+  </ul>
+  <div class="container">
+    <div class="col-sm-6 col-sm-offset-3">
+  <h1>Q&A app</h1>
+      <h2>Huidige onderwerpen</h2>
+  <div id="messages">
+      <div class="clearfix">
+        <h3>Voeg een nieuw onderwerp toe</h3>
+      </div>
+          <div id="formdiv">
+            <form action="/subjects.ejs" method="post" id="send-discussion">
+              <label for="discussion">Over welk onderwerp heeft u een vraag?</label>
+              <input type="text" id="discussion" size="15" class="form-control">
+              <input type="submit" value="Voeg toe" id="btnsend" class="btn btn-default navbar-btn" >
+            </form>
+      </div>
+    </div><!-- END COL-SM-6 -->
+  </div><!-- END CONTAINER -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/javascripts/discussions.js"></script>
+</body>
+</html>
+  
+
